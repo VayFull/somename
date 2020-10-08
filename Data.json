@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Воппер",
+            "cost": "179",
+            "rating": 5,
+            "description": "Вкуснейший бургер"
+        },
+        {
+            "id": 2,
+            "name": "Мясо",
+            "cost": 200,
+            "rating": 4,
+            "description": "Отличное мясо"
+        },
+        {
+            "id": 3,
+            "name": "Хлеб",
+            "cost": 30,
+            "rating": 5,
+            "description": "Преподаёт как надо"
+        }
+    ]
+  }
