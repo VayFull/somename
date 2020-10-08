@@ -15,7 +15,7 @@ export class CatalogPageComponent implements OnInit {
   }
 
   change(event) {
-    if(typeof event === 'string'){
+    if (typeof event === 'string'){
       this.searchQuery.next(event);
     }
   }
