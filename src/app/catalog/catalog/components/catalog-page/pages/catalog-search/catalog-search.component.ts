@@ -6,7 +6,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
   styleUrls: ['./catalog-search.component.css']
 })
 export class CatalogSearchComponent implements OnInit {
-  @Output() change: EventEmitter<any> = new EventEmitter<any>();
+  @Output() change: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() {
   }
@@ -14,7 +14,7 @@ export class CatalogSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  valueChange(event: any) {
+  valueChange(event: string) {
     this.change.emit(event);
   }
 

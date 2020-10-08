@@ -11,14 +11,13 @@ export class CatalogPageComponent implements OnInit {
   url = 'someurl';
   searchQuery: BehaviorSubject<string> = new BehaviorSubject<string>(null);
 
-  constructor() {
-  }
-
   ngOnInit(): void {
   }
 
   change(event) {
-    this.searchQuery.next(event);
+    if(typeof event === 'string'){
+      this.searchQuery.next(event);
+    }
   }
 
 }
